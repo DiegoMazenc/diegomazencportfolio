@@ -428,7 +428,7 @@ align-items: center;
     }
 
     .solarSystem{
-    z-index: 1;
+    z-index: 3;
     display: flex;
 position: relative;
 width: 90%;
