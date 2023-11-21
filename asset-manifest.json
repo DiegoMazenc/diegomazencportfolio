@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.91773c25.css",
-    "main.js": "/static/js/main.6a61c94c.js",
+    "main.css": "/static/css/main.5f070c07.css",
+    "main.js": "/static/js/main.b7e3cdeb.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/UBB.jpg": "/static/media/UBB.956c493ec833cde459c1.jpg",
     "static/media/astroboyComput.png": "/static/media/astroboyComput.6e164de1eb644ca1ba6c.png",
     "static/media/deadfuck.jpg": "/static/media/deadfuck.9650c00cef2df8a9aeec.jpg",
-    "static/media/CV_MazencDiégo.pdf": "/static/media/CV_MazencDiégo.fbc25c1fcab187714f70.pdf",
+    "static/media/CV_MazencDiégo.pdf": "/static/media/CV_MazencDiégo.6299805fe64d39770dc6.pdf",
     "static/media/DashBoard.jpg": "/static/media/DashBoard.c81692a9f10136bde185.jpg",
     "static/media/astroboyComputMobile.png": "/static/media/astroboyComputMobile.81c3b4cd3b6b6e6ba027.png",
     "static/media/siteVoyage.jpg": "/static/media/siteVoyage.2ab23255f1b336037054.jpg",
@@ -25,14 +25,16 @@
     "static/media/illustrator.png": "/static/media/illustrator.05e1e0aeaf14def96ffe.png",
     "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
     "static/media/vuejs.png": "/static/media/vuejs.da8dbd461489d0d4d1f9.png",
+    "static/media/symfony.png": "/static/media/symfony.88f76864995868b8d3f6.png",
+    "static/media/sun.png": "/static/media/sun.6befcd04384d4396c404.png",
     "static/media/design.png": "/static/media/design.17533bd235a2243b698f.png",
     "index.html": "/index.html",
-    "main.91773c25.css.map": "/static/css/main.91773c25.css.map",
-    "main.6a61c94c.js.map": "/static/js/main.6a61c94c.js.map",
+    "main.5f070c07.css.map": "/static/css/main.5f070c07.css.map",
+    "main.b7e3cdeb.js.map": "/static/js/main.b7e3cdeb.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91773c25.css",
-    "static/js/main.6a61c94c.js"
+    "static/css/main.5f070c07.css",
+    "static/js/main.b7e3cdeb.js"
   ]
 }
