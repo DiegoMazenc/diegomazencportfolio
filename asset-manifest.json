@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91773c25.css",
+    "main.js": "/static/js/main.6a61c94c.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/UBB.jpg": "/static/media/UBB.956c493ec833cde459c1.jpg",
+    "static/media/astroboyComput.png": "/static/media/astroboyComput.6e164de1eb644ca1ba6c.png",
+    "static/media/deadfuck.jpg": "/static/media/deadfuck.9650c00cef2df8a9aeec.jpg",
+    "static/media/CV_MazencDiégo.pdf": "/static/media/CV_MazencDiégo.fbc25c1fcab187714f70.pdf",
+    "static/media/DashBoard.jpg": "/static/media/DashBoard.c81692a9f10136bde185.jpg",
+    "static/media/astroboyComputMobile.png": "/static/media/astroboyComputMobile.81c3b4cd3b6b6e6ba027.png",
+    "static/media/siteVoyage.jpg": "/static/media/siteVoyage.2ab23255f1b336037054.jpg",
+    "static/media/SocialNetwork.jpg": "/static/media/SocialNetwork.8f530ede5f9c64ae9232.jpg",
+    "static/media/wolfgang.jpg": "/static/media/wolfgang.3a6ef5cdaa32c1189fba.jpg",
+    "static/media/astroboyDab.png": "/static/media/astroboyDab.54ed1579b589469ff7ed.png",
+    "static/media/figma.png": "/static/media/figma.aca77dc12f2e7c8c42e9.png",
+    "static/media/astroboySpaceship.png": "/static/media/astroboySpaceship.02a75d27b0fbd9674550.png",
+    "static/media/photoshop.png": "/static/media/photoshop.2edc41fb59d6dfc008ca.png",
+    "static/media/flame.png": "/static/media/flame.fcfaa8e844ba6a1c2bf2.png",
+    "static/media/mysql.png": "/static/media/mysql.60fe462b4dec8bbc0292.png",
+    "static/media/node.png": "/static/media/node.db1692c3a9f1564bf026.png",
+    "static/media/php.png": "/static/media/php.9c73c7b6eee3c47bd7a8.png",
+    "static/media/javascript.png": "/static/media/javascript.ea7495e2c4140150a9ea.png",
+    "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/illustrator.png": "/static/media/illustrator.05e1e0aeaf14def96ffe.png",
+    "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
+    "static/media/vuejs.png": "/static/media/vuejs.da8dbd461489d0d4d1f9.png",
+    "static/media/design.png": "/static/media/design.17533bd235a2243b698f.png",
+    "index.html": "/index.html",
+    "main.91773c25.css.map": "/static/css/main.91773c25.css.map",
+    "main.6a61c94c.js.map": "/static/js/main.6a61c94c.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91773c25.css",
+    "static/js/main.6a61c94c.js"
+  ]
+}
