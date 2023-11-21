@@ -49,30 +49,39 @@ const Header = () => {
 
           <img className='sun' src={sun} alt="" />
           <div className='merDiv'>
+          <div className=' ombreMer'></div>
             <img className='mercury' src={mercury} alt="" />
           </div>
           <div className='venDiv'>
+          <div className=' ombreVen'></div>
             <img className='venus' src={venus} alt="" />
           </div>
           <div className='earDiv'>
+          <div className=' ombreEar'></div>
             <img className='earth' src={earth} alt="" />
           </div>
           <div className='marDiv'>
+          <div className=' ombreMar'></div>
             <img className='mars' src={mars} alt="" />
           </div>
           <div className='jupDiv'>
+            <div className=' ombreJup'></div>
             <img className='jupiter' src={jupiter} alt="" />
           </div>
           <div className='satDiv'>
+          <div className=' ombreSat'></div>
             <img className='saturn' src={saturn} alt="" />
           </div>
           <div className='uraDiv'>
+          <div className=' ombreUra'></div>
             <img className='uranus' src={uranus} alt="" />
           </div>
           <div className='nepDiv'>
+          <div className=' ombreNep'></div>
             <img className='neptun' src={neptun} alt="" />
           </div>
           <div className='pluDiv'>
+          <div className=' ombrePlu'></div>
             <img className='pluto' src={pluto} alt="" />
           </div>
 

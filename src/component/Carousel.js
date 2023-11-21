@@ -14,6 +14,7 @@ import photoshop from '../img/carousel/photoshop.png';
 import indesign from '../img/carousel/indesign.png';
 import php from '../img/carousel/php.png';
 import vuejs from '../img/carousel/vuejs.png';
+import symfony from '../img/carousel/symfony.png';
 
 
 const CarouselComponent = () => {
@@ -60,6 +61,7 @@ const CarouselComponent = () => {
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={javascript} alt="" /></div> <p>JavaScript</p></div></Carousel.Slide>
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={react} alt="" /></div> <p>React</p></div></Carousel.Slide>
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={vuejs} alt="" /></div> <p>VueJS</p></div></Carousel.Slide>
+        <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={symfony} alt="" /></div> <p>Symfony</p></div></Carousel.Slide>
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={php} alt="" /></div> <p>PHP</p></div></Carousel.Slide>
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={mysql} alt="" /></div> <p>MySQL</p></div></Carousel.Slide>
         <Carousel.Slide><div className='carouCard'><div className='imgCarou'><img src={node} alt="" /></div> <p>Node JS</p></div></Carousel.Slide>
