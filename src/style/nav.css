@@ -1,0 +1,106 @@
+.barNav{
+  z-index: 5;
+  width: 100%;
+    position: fixed;
+}
+.navi{
+    
+    background: linear-gradient(#2a2937,#0a0910);
+    position: fixed;
+  border-radius: 30px;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .navi:hover{
+    box-shadow: 0 0 10px #905590;
+  }
+  
+  .selector{
+    position: absolute;
+    height: 80%;
+    border-radius: 30px;
+    background-color: #452c53;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .selector:hover{
+    box-shadow: 0 0 10px #905590;
+  }
+  
+  .selectorPosition1{
+    transform: translate(-111%, 10%);
+    background:  linear-gradient(#693569,#3b0f3a);
+    width: 30%;
+  }
+  
+  .selectorPosition2{
+    transform: translate(-4%, 10%);
+    background:  linear-gradient(#794f9e,#3c1a63);
+    width: 33%;
+  }
+  
+  .selectorPosition3{
+    transform: translate(102%, 10%);
+    background:  linear-gradient(#5650a0,#16185e);
+    width: 32%;
+  }
+  
+  .navi ul{
+    z-index: 1;
+    display: flex;
+    padding: 0;
+   margin: 0;
+    list-style: none;
+    justify-content: center;
+  
+    border: #908dc9 1px solid;
+    border-radius: 30px;
+    width: 270px;
+  }
+  
+  .navi li{
+    margin: 3px 5px;
+    padding: 10px 5%;
+   
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  
+  .navi a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 5%;
+  }
+  
+  
+  
+  .social{
+    position: absolute;
+  transform: translate(-50%,-50%);
+  right: 5%;
+  top: 35px;
+  }
+
+  .social img{
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 5px;;
+  }
+
+  .social img:hover{
+    opacity: 0.7;
+  }
+
+  @media screen and (max-width: 600px){
+    .social{
+      display: none;
+    }
+  }

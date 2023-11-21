@@ -1,0 +1,295 @@
+
+.header{
+    
+    display: flex;
+    padding:7% 5%;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.divAstroboy{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+.astroboyDab{
+    z-index: 4;
+    position: absolute;
+    width: 7%;
+    left: 50%;
+    top: 15%;
+   
+   animation:rotateAstroboy 30s linear infinite;
+
+}
+
+@keyframes rotateAstroboy {
+    0% {
+        z-index: 4;
+        width: 7%;
+        transform: translate(800%,-5%);
+    }
+    50% {
+        z-index: 4;
+        width: 7%;
+        transform:  translate(-1500%,500%) rotate(1620deg);
+    }
+    51%{
+        z-index: 1;
+        width: 2%;
+        transform:  translate(-2800%,500%) rotate(1620deg);
+    } 
+    100%{
+        z-index: 1;
+        width: 2%;
+        transform: translate(2800%,1000%) rotate(3240deg);
+    }
+}
+
+
+
+
+.presentation{
+  
+    z-index: 3;
+    width: 90%;
+    margin: 30px 5%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  
+.stackContent{
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .stackCard img{
+    height: 60px;
+    width: auto;
+  }
+  
+  .presentation h1{
+    margin-top: 0;
+    font-size: 50px;
+  }
+
+  .presentation p{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .stackIcons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+.solarSystem{
+    z-index: 2;
+    display: flex;
+position: relative;
+width: 100%;
+/* height: 100vh; */
+justify-content: center;
+align-items: center;
+}
+
+.sun, .merDiv, .venDiv, .earDiv, .marDiv, .jupDiv, .satDiv, .uraDiv, .nepDiv, .pluDiv{
+    position: absolute;
+
+}
+
+.merDiv{
+    height: 75px;
+    transform-origin: bottom;
+    transform: translateY(-35px);
+    animation: rotateMer 60s linear infinite;
+    
+}
+
+@keyframes rotateMer {
+    from {
+        transform: translateY(-37.5px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-37.5px) rotate(3240deg);
+    }
+}
+
+.venDiv{
+    height: 105px;
+    transform-origin: bottom;
+    transform: translateY(-45px);
+    animation: rotateVen 60s linear infinite;
+}
+
+@keyframes rotateVen {
+    from {
+        transform: translateY(-52.5px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-52.5px) rotate(2880deg);
+    }
+}
+
+.earDiv{
+    height: 135px;
+    transform-origin: bottom;
+    animation: rotateEar 60s linear infinite;
+}
+
+@keyframes rotateEar {
+    from {
+        transform: translateY(-67.5px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-67.5px) rotate(2520deg);
+    }
+}
+
+.marDiv{
+    height: 160px;
+    transform-origin: bottom;
+    animation: rotateMar 60s linear infinite;
+}
+
+@keyframes rotateMar {
+    from {
+        transform: translateY(-80px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-80px) rotate(2160deg);
+    }
+}
+
+
+.jupDiv{
+    height: 210px;
+    transform-origin: bottom;
+    animation: rotateJup 60s linear infinite;
+}
+
+@keyframes rotateJup {
+    from {
+        transform: translateY(-105px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-105px) rotate(1800deg);
+    }
+}
+
+.satDiv{
+    height: 270px;
+    transform-origin: bottom;
+    animation: rotateSat 60s linear infinite;
+}
+
+@keyframes rotateSat {
+    from {
+        transform: translateY(-135px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-135px) rotate(1440deg);
+    }
+}
+
+.uraDiv{
+    height: 320px;
+    transform-origin: bottom;
+    animation: rotateUra 60s linear infinite;
+}
+
+@keyframes rotateUra {
+    from {
+        transform: translateY(-160px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-160px) rotate(1080deg);
+    }
+}
+
+.nepDiv{
+    height: 360px;
+    transform-origin: bottom;
+
+    animation: rotateNep 60s linear infinite;
+}
+
+@keyframes rotateNep {
+    from {
+        transform: translateY(-180px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-180px) rotate(720deg);
+    }
+}
+
+.pluDiv{
+    height: 390px;
+    transform-origin: bottom;
+    transform: translateY(-185px);
+    animation: rotatePlu 60s linear infinite;
+}
+
+@keyframes rotatePlu {
+    from {
+        transform: translateY(-195px) rotate(0deg);
+    }
+    to {
+        transform:  translateY(-195px) rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+ 
+    .presentation h1{
+        font-size: 40px;
+      }
+
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 350px 5% 10%;
+        position: relative;
+     
+    }
+
+    .solarSystem{
+    z-index: 1;
+    display: flex;
+position: relative;
+width: 90%;
+
+justify-content: center;
+align-items: center;
+top: -120px;
+}
+
+.presentation{
+    
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stackIcons{
+    margin-top: 30px;
+  }
+}

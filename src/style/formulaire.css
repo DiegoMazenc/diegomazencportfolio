@@ -1,0 +1,215 @@
+.footer{
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    
+}
+
+.textForm{
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+.formContact{
+    margin: 5% 20%;
+    margin-bottom: 0;
+    width: 60%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.formContact label{
+    margin: 15px 0 5px 0;
+}
+
+.nameForm, .mailForm{
+padding: 20px 0 10px;
+background-color: rgba(0, 0, 0, 0);
+font-size: 18px;
+color: white;
+border: 0;
+border-bottom: 1px white solid;
+}
+
+.formContact input:focus{
+    outline: none;
+    }
+
+.formContact input::placeholder, .formContact textarea::placeholder{
+    color: rgb(162, 162, 162);
+}
+
+.formContact textarea{
+    padding: 10px;
+height: 100px;
+margin: 15px 0;
+background-color: rgba(0, 0, 0, 0);
+font-size: 18px;
+color: white;
+border: 1px white solid;
+
+}
+
+.btnForm{
+    width: 40%;
+    font-size: 18px;
+    margin: 0 30%;
+    padding: 15px 0;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.btnForm:hover{
+    background-color: rgb(109, 171, 127);
+
+}
+.topFooter{
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.textFooter{
+    font-family: 'Martian Mono', monospace;
+    font-size: 40px;
+    text-align: end;
+    padding-right: 20px;
+}
+
+
+.imgAnim{
+    position: relative;
+    width: 200px;
+    padding: 10%;
+    
+    top: 0;
+    animation: astroAnimation 1.5s linear infinite ;
+}
+
+.astroboySpaceship, .flame{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+}
+
+.flame{
+    width: 50%;
+    transform: rotate(-10deg) translate(-50%,-20%);
+    animation: flameAnimation 1.5s linear infinite ;
+}
+
+.textAnimate{
+    position: absolute;
+    width: 50%;
+}
+
+@keyframes astroAnimation {
+    0% {
+        transform: rotate(-15deg) translateY(0) ;
+    }
+
+    33%{
+        transform: rotate(-15deg) translateY(-10%);
+    }
+
+    100%{
+        transform: rotate(-15deg) translateY(0)
+    }
+}
+
+@keyframes flameAnimation {
+    0% {
+        transform: rotate(-7deg) translate(-50%,-20%);
+        opacity: 1;
+    }
+
+    33% {
+        transform: rotate(-7deg) translate(-50%,40%);
+        opacity: 1;
+    }
+  
+    100% {
+        transform:rotate(-7deg)  translate(-50%,80%);
+        opacity: 0;
+    }
+}
+
+.contactNumCv{
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+}
+
+.contactNumCv p{
+    margin: 0;
+    margin-right: 40px;
+    border: 1px solid rgb(134, 166, 199);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.contactNumCv a{
+    margin: 0;
+    margin-right: 40px;
+    border: 1px solid rgb(134, 166, 199);
+    background: linear-gradient(rgb(26, 68, 130),rgb(33, 154, 206));
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.contactNumCv a:hover{
+    background: linear-gradient(rgb(51, 85, 135),rgb(75, 168, 208));
+}
+
+@media screen and (max-width: 1064px){
+    .textForm{
+        font-size: 20px;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .topFooter{
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 5%;
+    }
+
+    .imgAnim{
+        left: 20%;
+    }
+
+    .formContact{
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 0;
+
+    }
+
+    .textFooter{
+        margin-top: 40px;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .textAnimate{
+        width: 70%;
+    }
+    .contactNumCv{
+
+        display: block;
+    }
+   
+
+
+
+    
+}

@@ -1,0 +1,232 @@
+.portFolio{
+    margin: 60px 0;
+}
+
+.portFolio h2{
+    text-align: center;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.CardContenent{
+    width: 45%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+    border: 3px solid rgb(146, 165, 182);
+    
+}
+
+.pasHover{
+width: 100%;
+height: 100%;
+background-color: red;
+overflow: hidden;
+}
+
+.Hovered{
+    text-align: center;
+    width:90%;
+    height: 100%;
+    position: absolute;
+    background:linear-gradient(rgba(19, 19, 19,0.952)75%, rgba(36, 36, 36, 0.952));
+    top: 85%;
+    /* top: 0; */
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease-in-out;
+    padding: 0 5%;
+}
+
+.Hovered:hover{
+    top: 0;
+}
+
+.titleCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    
+}
+
+.imgCard{
+    width: 100%;
+    
+  }
+ 
+
+  .cardStacks{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 15%;
+  }
+
+  .cardStacks p{
+    background: linear-gradient(rgb(37, 109, 108),rgb(13, 194, 134));
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+
+  .descContent{
+    display: flex;
+    align-items: center;
+    height: 48%;
+  }
+
+  .cardDesc{
+    
+   max-height: 100%; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+  }
+
+  .cardDesc p{
+   margin: 0;
+   }
+
+
+
+  .cardDesc::-webkit-scrollbar {
+    width: 7px; /* Largeur de la barre de défilement */
+  }
+  
+  .cardDesc::-webkit-scrollbar-thumb {
+    background-color: #363636; /* Couleur de la barre de défilement */
+  }
+  
+  /* Masquer les flèches de défilement */
+  .cardDesc::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  /* Masquer les coins de la barre de défilement */
+  .cardDesc::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  .cardLinks{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 15%;
+    bottom: 0;
+    
+  }
+
+  .imgLink{
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .webLink{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(rgb(26, 68, 130),rgb(33, 154, 206));
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0;
+    transition: 0.3s;
+  }
+
+  .webLink:hover{
+    background: linear-gradient(rgb(51, 85, 135),rgb(75, 168, 208));
+  }
+
+  .repoLink{
+    display: flex;
+    align-items: center;
+  }
+
+  .repo{
+  
+    overflow: hidden;
+  }
+
+  .repo a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .repo p{
+padding-left: 15px;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease; /* Ajouter une transition pour une animation fluide */
+}
+
+.repo.hovered p {
+    transform: translateX(0);
+  }
+  @media screen and (max-width: 1100px){
+    .CardContenent{
+        width: 90%;
+        margin: 5%;
+    }
+   
+
+
+  }
+
+  @media screen and (max-width: 700px){
+
+.descContent{
+    height: 50%;
+}
+
+    .CardContenent{
+        height: 400px;
+    }
+
+    .Hovered h3{
+        margin: 10px 0 0 0;
+      }
+
+      /* .cardDesctwo{
+        margin-top: 5px;
+        max-height: 50%; 
+         overflow-y: scroll; 
+         overflow-x: hidden;
+       } */
+
+       .cardLinks{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 15%;
+        bottom: 0;
+       }
+            
+
+       .webLink{
+        color: white;
+        text-decoration: none;
+        background: linear-gradient(rgb(26, 68, 130),rgb(33, 154, 206));
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 0;
+      }
+
+      .cardStacks p{
+        background: linear-gradient(rgb(37, 109, 108),rgb(13, 194, 134));
+        padding: 3px 10px;
+        border-radius: 15px;
+        margin: 5px;
+        font-size: 13px;
+      }
+
+  }

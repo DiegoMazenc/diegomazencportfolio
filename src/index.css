@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  position: relative; /* Ajoutez cette ligne */
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  background-image: url(https://cdn.pixabay.com/photo/2017/04/23/14/23/nebula-2253941_1280.jpg);
+  background-size: cover;
+  filter: blur(15px);
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pour placer l'élément en arrière-plan */
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Martian Mono', monospace;
+}

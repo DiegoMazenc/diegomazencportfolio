@@ -1,0 +1,20 @@
+.imgCarou{
+    width: 100%;
+}
+
+.imgCarou img{
+    width: 100%;
+}
+
+.carouCard{
+    background:linear-gradient(rgb(19, 19, 19)75%, rgb(36, 36, 36));
+    border-radius: 15px;
+
+    padding: 15px ;
+    margin: 50px 5% 5% ;
+    text-align: center;
+}
+
+.carouCard p{
+    margin-bottom: 0;
+}
