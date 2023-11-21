@@ -162,6 +162,8 @@ border: 1px white solid;
     padding: 10px 15px;
     border-radius: 20px;
     transition: 0.3s;
+    color: white;
+    text-decoration: none;
 }
 
 .contactNumCv a:hover{

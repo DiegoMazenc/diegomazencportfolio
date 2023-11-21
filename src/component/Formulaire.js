@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import astroboySpaceship from '../img/astroboySpaceship.png';
 import flame from '../img/flame.png';
+import cv from '../img/CV_MazencDiégo.pdf';
 
 const TypingText = ({ text, delay }) => {
   const [displayText, setDisplayText] = useState('');
@@ -62,7 +63,7 @@ export const ContactUs = () => {
           <p className='textForm'>Contactez-moi, j'ai plein de nouvelles ressources ! Houston ?</p>
         <div className='contactNumCv'>
 <p>06.27.79.49.77</p>
-<a> Voir mon CV</a>
+<a href={cv} target='_blank'> Voir mon CV</a>
         </div>
         </div>
         <div className='imgAnim'>
