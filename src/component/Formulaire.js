@@ -62,7 +62,7 @@ export const ContactUs = () => {
           <p className='textForm'>Contactez-moi, j'ai plein de nouvelles ressources ! Houston ?</p>
         <div className='contactNumCv'>
 <p>06.27.79.49.77</p>
-<a>Télécharger mon CV</a>
+<a> Voir mon CV</a>
         </div>
         </div>
         <div className='imgAnim'>

@@ -157,7 +157,6 @@ border: 1px white solid;
 
 .contactNumCv a{
     margin: 0;
-    margin-right: 40px;
     border: 1px solid rgb(134, 166, 199);
     background: linear-gradient(rgb(26, 68, 130),rgb(33, 154, 206));
     padding: 10px 15px;
@@ -205,10 +204,18 @@ border: 1px white solid;
     }
     .contactNumCv{
 
-        display: block;
+        justify-content: space-evenly;
+    }
+
+    .contactNumCv a, .contactNumCv p{
+        margin: 0;
     }
    
-
+    .textForm{
+        font-size: 20px;
+        margin-top: 170px;
+        margin-bottom: 40px;
+    }
 
 
     
