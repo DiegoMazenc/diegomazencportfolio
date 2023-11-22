@@ -11,6 +11,16 @@ import arrow from '../img/arrow.png';
 
 const Card = () => {
     const [isHovered, setHovered] = useState(false);
+    const [isActive, setActive] = useState(false);
+
+    const handleToggle = () => {
+        // Si l'écran est inférieur à 700 pixels, basculer entre 0 et 85%
+        if (window.innerWidth < 700) {
+            setActive(!isActive);
+        }
+        // Vous pouvez ajouter une logique supplémentaire ici pour les écrans plus grands si nécessaire
+    };
+
     return (
 
 
@@ -23,7 +33,7 @@ const Card = () => {
                         <img className='imgCard' src={deadfuck} alt="" />
 
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
                         <div className='titleCard'>
                             <h3>www.deadfuck.fr</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -63,7 +73,8 @@ const Card = () => {
                         <img className='imgCard' src={SocialNetwork} alt="" />
 
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+
                         <div className='titleCard'>
                             <h3>Réseau Social</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -102,7 +113,8 @@ const Card = () => {
                         <img className='imgCard' src={UBB} alt="" />
 
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+
                         <div className='titleCard'>
                             <h3>Ultimate Battle Bros</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -142,7 +154,8 @@ const Card = () => {
                     <div className='pasHover'>
                         <img className='imgCard' src={DashBoard} alt="" />
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+
                         <div className='titleCard'>
                             <h3>DashBoard</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -178,7 +191,8 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                     <div className='pasHover'>
                         <img className='imgCard' src={wolfGang} alt="" />
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+
                         <div className='titleCard'>
                             <h3>WolfGand</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -212,7 +226,8 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                         <img className='imgCard' src={siteVoyage} alt="" />
 
                     </div>
-                    <div className='Hovered'>
+                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+
                         <div className='titleCard'>
                             <h3>1er Site Mobile-First</h3>
                             <img className='arrow' src={arrow} alt="" />

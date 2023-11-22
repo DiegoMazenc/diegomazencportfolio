@@ -43,9 +43,27 @@ const TypingText = ({ text, delay }) => {
 export const ContactUs = () => {
   const form = useRef();
   const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [email, setEmail] = useState('');
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleEmailChange = (event) => {
+    const newEmail = event.target.value;
+    setEmail(newEmail);
+
+    const emailValidationRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    setIsEmailValid(emailValidationRegex.test(newEmail));
+  };
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    if (!isEmailValid) {
+      console.error('Veuillez entrer une adresse email valide.');
+
+      setEmail('');
+      
+      return; 
+    }
 
     emailjs
       .sendForm('service_5bn38qj', 'template_xc3iie9', form.current, 'tU5x-6cN0oZf7QHdu')
@@ -53,9 +71,8 @@ export const ContactUs = () => {
         (result) => {
           console.log(result.text);
           setConfirmationMessage('Le formulaire a bien été soumis.');
-          // Effacer les champs du formulaire
           form.current.reset();
-          // Afficher une alerte
+          setEmail('');
           alert('Le formulaire a bien été soumis.');
         },
         (error) => {
@@ -73,10 +90,15 @@ export const ContactUs = () => {
           </div>
           <p className='textForm'>Contactez-moi, j'ai plein de nouvelles ressources ! Houston ?</p>
           <div className='socialLink'>
-          <a href="https://github.com/DiegoMazenc?tab=repositories" target="_blank"><img className='imgLink' src={githubLogo} alt="" /></a>
-      <a href="https://www.linkedin.com/in/di%C3%A9go-mazenc-89811313b/" target="_blank" ><img className='linkedin' src={linkedin} alt="" /></a>
+            <a href="https://github.com/DiegoMazenc?tab=repositories" target="_blank">
+              <img className='imgLink' src={githubLogo} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/di%C3%A9go-mazenc-89811313b/" target="_blank">
+              <img className='linkedin' src={linkedin} alt="" />
+            </a>
           </div>
           <div className='contactNumCv'>
+            <p>contact@diego-mazenc.com</p>
             <p>06.27.79.49.77</p>
             <a href={cv} target='_blank'>
               {' '}
@@ -91,14 +113,25 @@ export const ContactUs = () => {
       </div>
 
       <form className='formContact' ref={form} onSubmit={sendEmail}>
-        <input className='nameForm' type='text' name='user_name' placeholder='Votre Nom' required />
-        <input className='mailForm' type='email' name='user_email' placeholder='Votre Email' required />
-        <textarea name='message' placeholder='Votre Message' required />
-        <input className='btnForm' type='submit' value='Send' />
-      </form>
-      <p className='credits'>Site réalisé par Mazenc Diégo | Outil : React | Crédit illustrations Astronautes : catalyststuff, Freepik</p>
-      {confirmationMessage && <p className='confirmationMessage'>{confirmationMessage}</p>}
-    </div>
+      <input className='nameForm' type='text' name='user_name' placeholder='Votre Nom' required />
+      <input
+        className='mailForm'
+        type='email'
+        name='user_email'
+        placeholder={
+          isEmailValid
+            ? 'Votre Email'
+            : 'Veuillez entrer une adresse email valide'
+        }
+        onChange={handleEmailChange}
+        value={email} 
+        required
+      />
+      <textarea name='message' placeholder='Votre Message' required />
+      <input className='btnForm' type='submit' value='Send' />
+    </form>
+ 
+      </div>
   );
 };
 

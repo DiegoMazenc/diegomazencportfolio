@@ -144,19 +144,20 @@ border: 1px white solid;
 .contactNumCv{
     font-size: 14px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
 }
 
 .contactNumCv p{
-    margin: 0;
-    margin-right: 40px;
+    margin: 0 0 10px 10px;
     border: 1px solid rgb(134, 166, 199);
     padding: 10px 15px;
     border-radius: 20px;
+    background: linear-gradient(rgb(26, 26, 26),rgb(53, 53, 53));
 }
 
 .contactNumCv a{
-    margin: 0;
+    margin: 0 0 10px 10px;
     border: 1px solid rgb(134, 166, 199);
     background: linear-gradient(rgb(26, 68, 130),rgb(33, 154, 206));
     padding: 10px 15px;
@@ -224,26 +225,26 @@ border: 1px white solid;
         font-size: 27px;
     }
 
-    .contactNumCv{
-
-        justify-content: space-between;
-    }
-
-    .contactNumCv a, .contactNumCv p{
-        margin: 0;
-    }
+    
    
     .textForm{
         font-size: 20px;
         margin-top: 170px;
         margin-bottom: 40px;
     }
+
+    .contactNumCv{
+
+        justify-content: start;
+        flex-wrap: wrap;
+       
+    }
     
 
     
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 700px){
     .socialLink{
         display: flex;
         justify-content: end;
@@ -256,5 +257,16 @@ border: 1px white solid;
         width: 40px;
         margin: 5px;;
       }
+
+      .contactNumCv{
+
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+    }
+
+    .contactNumCv a, .contactNumCv p{
+        margin: 5px;
+    }
 
 }

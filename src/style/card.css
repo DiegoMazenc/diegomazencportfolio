@@ -169,15 +169,11 @@ padding-left: 15px;
 
 .arrow{
   position: absolute;
-
   transform: translate(-50%,-50%);
   right: 0;
   top: 8%;
   width: 25px;
   height: auto;
-
-
-
 }
 
 .repo.hovered p {
@@ -194,6 +190,9 @@ padding-left: 15px;
   }
 
   @media screen and (max-width: 700px){
+    .Hovered.active {
+      top: 85%; /* Réinitialise à 85% pour les écrans plus petits lorsqu'il est actif */
+  }
 
 .descContent{
     height: 50%;
