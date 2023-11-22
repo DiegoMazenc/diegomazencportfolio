@@ -130,7 +130,7 @@ export const ContactUs = () => {
       <textarea name='message' placeholder='Votre Message' required />
       <input className='btnForm' type='submit' value='Send' />
     </form>
- 
+        <p className='credits'>Site web par Diégo Mazenc | React | crédits illustrations : catalyststuff, Freepik</p>
       </div>
   );
 };
