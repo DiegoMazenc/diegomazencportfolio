@@ -96,7 +96,7 @@ export const ContactUs = () => {
         <textarea name='message' placeholder='Votre Message' required />
         <input className='btnForm' type='submit' value='Send' />
       </form>
-
+      <p className='credits'>Site réalisé par Mazenc Diégo | Outil : React | Crédit illustrations Astronautes : catalyststuff, Freepik</p>
       {confirmationMessage && <p className='confirmationMessage'>{confirmationMessage}</p>}
     </div>
   );

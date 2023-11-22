@@ -75,7 +75,7 @@ import astroboySpaceship from '../img/astroboySpaceship.png';
                     <h3>Front-End</h3>
                     <p>Réalisation de site internet Responsive</p>
                     <p>Manipulation de DOM</p>
-                    <p>Rendu Dynamique</p>
+                    <p>Rendu dynamique</p>
                     <p>Maîtrise des Frameworks</p>
                     <p>Répond aux normes W3C</p>
                   </div>
@@ -88,8 +88,8 @@ import astroboySpaceship from '../img/astroboySpaceship.png';
                 <div className='pointText'></div>
                 <div className='listStack'>
                   <h3>Back-End</h3>
-                  <p>Création de Base de données</p>
-                  <p>Manipulation de la data</p>
+                  <p>Création de base de données</p>
+                  <p>Manipulation des données</p>
                   <p>Sécurisation des données</p>
                   <p>Création et appel d'API</p>
                   <p>Programmation Orientée Objet</p>
@@ -103,9 +103,9 @@ import astroboySpaceship from '../img/astroboySpaceship.png';
                 <div className='pointText'></div>
                 <div className='listStack'>
                   <h3>Design</h3>
-                  <p>Création visuelle Graphique</p>
+                  <p>Création de visuels Graphiques</p>
                   <p>Zoning, Wireframe, Maquettage</p>
-                  <p>Charte Graphique</p>
+                  <p>Charte graphique</p>
                   <p>Illustration</p>
                 </div>
               </div>
