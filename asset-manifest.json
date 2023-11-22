@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d8d58b43.css",
-    "main.js": "/static/js/main.012c058b.js",
+    "main.js": "/static/js/main.7ff18ab8.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/UBB.jpg": "/static/media/UBB.956c493ec833cde459c1.jpg",
     "static/media/astroboyComput.png": "/static/media/astroboyComput.6e164de1eb644ca1ba6c.png",
@@ -30,11 +30,11 @@
     "static/media/design.png": "/static/media/design.17533bd235a2243b698f.png",
     "index.html": "/index.html",
     "main.d8d58b43.css.map": "/static/css/main.d8d58b43.css.map",
-    "main.012c058b.js.map": "/static/js/main.012c058b.js.map",
+    "main.7ff18ab8.js.map": "/static/js/main.7ff18ab8.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8d58b43.css",
-    "static/js/main.012c058b.js"
+    "static/js/main.7ff18ab8.js"
   ]
 }
