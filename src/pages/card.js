@@ -6,6 +6,7 @@ import SocialNetwork from '../img/portfolio/SocialNetwork.jpg';
 import UBB from '../img/portfolio/UBB.jpg';
 import deadfuck from '../img/portfolio/deadfuck.jpg';
 import githubLogo from '../img/githubLogo.png';
+import arrow from '../img/arrow.png';
 
 
 const Card = () => {
@@ -25,7 +26,7 @@ const Card = () => {
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>www.deadfuck.fr</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
@@ -65,7 +66,7 @@ const Card = () => {
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>Réseau Social</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
@@ -104,7 +105,7 @@ const Card = () => {
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>Ultimate Battle Bros</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
@@ -144,7 +145,7 @@ const Card = () => {
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>DashBoard</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
@@ -180,7 +181,7 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>WolfGand</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
@@ -214,7 +215,7 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                     <div className='Hovered'>
                         <div className='titleCard'>
                             <h3>1er Site Mobile-First</h3>
-                            <p className='arrow'> {'>'} </p>
+                            <img className='arrow' src={arrow} alt="" />
                         </div>
 
                         <div className='cardStacks'>
