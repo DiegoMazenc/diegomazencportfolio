@@ -32,22 +32,25 @@ background-color: red;
 overflow: hidden;
 }
 
+
+
 .Hovered{
-    text-align: center;
-    width:90%;
-    height: 100%;
-    position: absolute;
-    background:linear-gradient(rgba(19, 19, 19,0.952)75%, rgba(36, 36, 36, 0.952));
-    top: 85%;
-    /* top: 0; */
-    backdrop-filter: blur(4px);
-    transition: 0.3s ease-in-out;
-    padding: 0 5%;
+  text-align: center;
+  width:90%;
+  height: 100%;
+  position: absolute;
+  background:linear-gradient(rgba(19, 19, 19,0.952)75%, rgba(36, 36, 36, 0.952));
+  top: 85%;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease-in-out;
+  padding: 0 5%;
 }
 
-.Hovered:hover{
-    top: 0;
+.Hovered-hover{
+  top: 0;
 }
+
+
 
 .titleCard{
     display: flex;
@@ -164,7 +167,7 @@ overflow: hidden;
   .repo p{
 padding-left: 15px;
     transform: translateX(-110%);
-    transition: transform 0.3s ease; /* Ajouter une transition pour une animation fluide */
+    transition: transform 0.3s ease; 
 }
 
 .arrow{
@@ -190,9 +193,7 @@ padding-left: 15px;
   }
 
   @media screen and (max-width: 700px){
-    .Hovered.active {
-      top: 85%; /* Réinitialise à 85% pour les écrans plus petits lorsqu'il est actif */
-  }
+
 
 .descContent{
     height: 50%;

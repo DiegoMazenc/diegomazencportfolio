@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import wolfGang from '../img/portfolio/wolfgang.jpg';
 import DashBoard from '../img/portfolio/DashBoard.jpg';
 import siteVoyage from '../img/portfolio/siteVoyage.jpg';
@@ -11,29 +11,58 @@ import arrow from '../img/arrow.png';
 
 const Card = () => {
     const [isHovered, setHovered] = useState(false);
-    const [isActive, setActive] = useState(false);
+    // const [isActive, setActive] = useState(false);
+    let art1 = true;
+    let art2 = true;
+    let art3 = true;
+    let art4 = true;
+    let art5 = true;
+    let art6 = true;
 
-    const handleToggle = () => {
-        // Si l'écran est inférieur à 700 pixels, basculer entre 0 et 85%
+    const handleToggle = (cardId, active) => {
         if (window.innerWidth < 700) {
-            setActive(!isActive);
+            let card = document.querySelector(`.Hovered-${cardId}`);
+            if (active) {
+                card.classList.add('Hovered-hover');
+                active= false;
+            } else {
+                card.classList.remove('Hovered-hover');
+                active= true;
+            }
         }
-        // Vous pouvez ajouter une logique supplémentaire ici pour les écrans plus grands si nécessaire
+        return active; 
+    };
+    
+
+
+    const handleHover = (cardId) => {
+        // Si l'écran est supérieur à 700 pixels, ajouter la classe au survol
+        if (window.innerWidth >= 700) {
+            document.querySelector(`.Hovered-${cardId}`).classList.add('Hovered-hover');
+        }
+    };
+
+    const handleHoverLeave = (cardId) => {
+        // Si l'écran est supérieur à 700 pixels, retirer la classe lorsque le survol se termine
+        if (window.innerWidth >= 700) {
+            document.querySelector(`.Hovered-${cardId}`).classList.remove('Hovered-hover');
+        }
     };
 
     return (
-
-
-
         <div className='portFolio' id="portFolio">
             <h2>PortFolio</h2>
             <div className='gallery'>
                 <div className='CardContenent'>
                     <div className='pasHover'>
                         <img className='imgCard' src={deadfuck} alt="" />
-
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-deadfuck`}
+                        onMouseEnter={() => handleHover('deadfuck')}
+                        onMouseLeave={() => handleHoverLeave('deadfuck')}
+                        onClick={() => { art1 = handleToggle('deadfuck', art1); }}
+                    >
                         <div className='titleCard'>
                             <h3>www.deadfuck.fr</h3>
                             <img className='arrow' src={arrow} alt="" />
@@ -73,7 +102,12 @@ const Card = () => {
                         <img className='imgCard' src={SocialNetwork} alt="" />
 
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-socialNetwork `}
+                        onMouseEnter={() => handleHover('socialNetwork')}
+                        onMouseLeave={() => handleHoverLeave('socialNetwork')}
+                        onClick={() => { art2 = handleToggle('socialNetwork', art2); }}
+                    >
 
                         <div className='titleCard'>
                             <h3>Réseau Social</h3>
@@ -113,7 +147,12 @@ const Card = () => {
                         <img className='imgCard' src={UBB} alt="" />
 
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-UBB`}
+                        onMouseEnter={() => handleHover('UBB')}
+                        onMouseLeave={() => handleHoverLeave('UBB')}
+                        onClick={() => { art3 = handleToggle('UBB', art3); }}
+                    >
 
                         <div className='titleCard'>
                             <h3>Ultimate Battle Bros</h3>
@@ -154,7 +193,12 @@ const Card = () => {
                     <div className='pasHover'>
                         <img className='imgCard' src={DashBoard} alt="" />
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-DashBoard `}
+                        onMouseEnter={() => handleHover('DashBoard')}
+                        onMouseLeave={() => handleHoverLeave('DashBoard')}
+                        onClick={() => { art4 = handleToggle('DashBoard', art4); }}
+                    >
 
                         <div className='titleCard'>
                             <h3>DashBoard</h3>
@@ -169,9 +213,9 @@ const Card = () => {
                         </div>
                         <div className='descContent'>
                             <div className='cardDesc'>
-                                <p>J'ai élaboré un Dashboard conçu pour servir de fond d'écran. L'objectif principal de cet exercice était de récupérer des données à partir de différentes API proposées par divers services et de les intégrer harmonieusement.<br/>
-Le Dashboard comprend un service météo qui vous fournit des informations en temps réel sur les conditions météorologiques selon votre zone géographique. Pour ceux qui doutent de la précision, il leur suffit de jeter un coup d'œil par la fenêtre pour confirmer que l'API fonctionne correctement. De plus, le fond d'écran se renouvelle à chaque rafraîchissement de la page, J'ai choisi de mettre des images de l'islande et de montagnes.<br/>
-L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez également des répliques célèbres de la série Game of Thrones, ajoutant une touche d'épique à votre expérience. De plus, de petits messages contextuels changent à différents moment de la journée, créant une ambiance adaptée à chaque instant.</p>
+                                <p>J'ai élaboré un Dashboard conçu pour servir de fond d'écran. L'objectif principal de cet exercice était de récupérer des données à partir de différentes API proposées par divers services et de les intégrer harmonieusement.<br />
+                                    Le Dashboard comprend un service météo qui vous fournit des informations en temps réel sur les conditions météorologiques selon votre zone géographique. Pour ceux qui doutent de la précision, il leur suffit de jeter un coup d'œil par la fenêtre pour confirmer que l'API fonctionne correctement. De plus, le fond d'écran se renouvelle à chaque rafraîchissement de la page, J'ai choisi de mettre des images de l'islande et de montagnes.<br />
+                                    L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez également des répliques célèbres de la série Game of Thrones, ajoutant une touche d'épique à votre expérience. De plus, de petits messages contextuels changent à différents moment de la journée, créant une ambiance adaptée à chaque instant.</p>
                             </div>
                         </div>
                         <div className='cardLinks'>
@@ -191,10 +235,15 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                     <div className='pasHover'>
                         <img className='imgCard' src={wolfGang} alt="" />
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-wolfGang `}
+                        onMouseEnter={() => handleHover('wolfGang')}
+                        onMouseLeave={() => handleHoverLeave('wolfGang')}
+                        onClick={() => { art5 = handleToggle('wolfGang', art5); }}
+                    >
 
                         <div className='titleCard'>
-                            <h3>WolfGand</h3>
+                            <h3>WolfGang</h3>
                             <img className='arrow' src={arrow} alt="" />
                         </div>
 
@@ -226,7 +275,12 @@ L'aspect dynamique du Dashboard ne s'arrête pas là. Vous découvrirez égaleme
                         <img className='imgCard' src={siteVoyage} alt="" />
 
                     </div>
-                    <div className={`Hovered ${isActive ? 'active' : ''}`} onClick={handleToggle}>
+                    <div
+                        className={`Hovered Hovered-siteVoyage `}
+                        onMouseEnter={() => handleHover('siteVoyage')}
+                        onMouseLeave={() => handleHoverLeave('siteVoyage')}
+                        onClick={() => { art6 = handleToggle('siteVoyage', art6); }}
+                    >
 
                         <div className='titleCard'>
                             <h3>1er Site Mobile-First</h3>
