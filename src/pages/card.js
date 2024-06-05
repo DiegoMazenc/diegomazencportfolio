@@ -80,8 +80,9 @@ const Card = () => {
                         </div>
                         <div className='descContent'>
                             <div className='cardDesc cardDesctwo'>
-                                <p>Réalisation d'un site internet pour un groupe de metal Lyonnais. Ce projet a été élaboré en utilisant framework React, permettant ainsi de créer un site dynamique et réactif. Pour optimiser les fonctionnalités du site, j'ai intégré des bibliothèques modernes telles que Mantine et EmailJS, ajoutant ainsi des éléments interactifs et dynamiques à l'expérience utilisateur.<br />
-                                    En plus du développement, j'ai également pris en charge la conception graphique en créant des images promotionnelles percutantes et divers visuels pour mettre en valeur le groupe sous toutes ses facettes. L'ensemble du site a été déployé en ligne sous un nom de domaine dédié, offrant une présence web professionnelle au groupe.</p>
+                                <p>Projet réalisé avec le framework Vue.js afin de m'exercer à la conception d'un site internet à partir de micro-composants. Pour cela, j'ai choisi le thème d'une boutique e-commerce vendant diverses catégories de marchandises en rapport avec les jeux vidéo, mangas et figurines.<br />
+                                Afin de faciliter la communication entre mes différents composants ainsi que mes données JSON, j'ai mis en place un store avec l'extension Pinia. Cela m'a permis de gérer ma logique de conception sur plusieurs niveaux en centralisant certaines actions dans le store.<br />
+                                Le dynamisme est également présent avec la possibilité de trier les articles par prix, par ordre alphabétique, ainsi que selon le thème, l'univers ou la plateforme. Nous pouvons mettre les articles dans un panier qui indique dynamiquement le montant total, et nous pouvons également supprimer les articles à tout moment. Enfin, une page admin a été mise en place afin de gérer le stock.</p>
                             </div>
                         </div>
                         <div className='cardLinks'>
