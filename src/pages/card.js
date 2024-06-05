@@ -5,6 +5,7 @@ import siteVoyage from '../img/portfolio/siteVoyage.jpg';
 import SocialNetwork from '../img/portfolio/SocialNetwork.jpg';
 import UBB from '../img/portfolio/UBB.jpg';
 import deadfuck from '../img/portfolio/deadfuck.jpg';
+import turbojoujou from '../img/portfolio/turboJoujou.jpg';
 import githubLogo from '../img/githubLogo.png';
 import arrow from '../img/arrow.png';
 
@@ -18,6 +19,7 @@ const Card = () => {
     let art4 = true;
     let art5 = true;
     let art6 = true;
+    let art7 = true;
 
     const handleToggle = (cardId, active) => {
         if (window.innerWidth < 700) {
@@ -53,6 +55,48 @@ const Card = () => {
         <div className='portFolio' id="portFolio">
             <h2>PortFolio</h2>
             <div className='gallery'>
+            <div className='CardContenent'>
+                    <div className='pasHover'>
+                        <img className='imgCard' src={turbojoujou} alt="" />
+                    </div>
+                    <div
+                        className={`Hovered Hovered-turbojoujou`}
+                        onMouseEnter={() => handleHover('turbojoujou')}
+                        onMouseLeave={() => handleHoverLeave('turbojoujou')}
+                        onClick={() => { art7 = handleToggle('turbojoujou', art7); }}
+                    >
+                        <div className='titleCard'>
+                            <h3>Turbo Joujou</h3>
+                            <img className='arrow' src={arrow} alt="" />
+                        </div>
+
+                        <div className='cardStacks'>
+                            <p>HTML </p>
+                            <p>css</p>
+                            <p>JavaScript</p>
+                            <p>Vue JS</p>
+                            <p>Pinia</p>
+                            <p>Vercel</p>
+                        </div>
+                        <div className='descContent'>
+                            <div className='cardDesc cardDesctwo'>
+                                <p>Réalisation d'un site internet pour un groupe de metal Lyonnais. Ce projet a été élaboré en utilisant framework React, permettant ainsi de créer un site dynamique et réactif. Pour optimiser les fonctionnalités du site, j'ai intégré des bibliothèques modernes telles que Mantine et EmailJS, ajoutant ainsi des éléments interactifs et dynamiques à l'expérience utilisateur.<br />
+                                    En plus du développement, j'ai également pris en charge la conception graphique en créant des images promotionnelles percutantes et divers visuels pour mettre en valeur le groupe sous toutes ses facettes. L'ensemble du site a été déployé en ligne sous un nom de domaine dédié, offrant une présence web professionnelle au groupe.</p>
+                            </div>
+                        </div>
+                        <div className='cardLinks'>
+                            <div className='repoLink' onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+                                <a href='https://github.com/DiegoMazenc/turbojoujou' target='_blank'><img className='imgLink' src={githubLogo} alt="" /></a>
+                                <div className={`repo ${isHovered ? 'hovered' : ''}`}>
+                                    <a href='https://github.com/DiegoMazenc/turbojoujou' target='_blank'> <p>Voir Repositorie</p></a>
+                                </div>
+                            </div>
+
+                            <a href='https://turbo-jou-jou-8u48.vercel.app/' className='webLink' target='_blank'>voir le site</a>
+                        </div>
+                    </div>
+
+                </div>
                 <div className='CardContenent'>
                     <div className='pasHover'>
                         <img className='imgCard' src={deadfuck} alt="" />
@@ -61,7 +105,7 @@ const Card = () => {
                         className={`Hovered Hovered-deadfuck`}
                         onMouseEnter={() => handleHover('deadfuck')}
                         onMouseLeave={() => handleHoverLeave('deadfuck')}
-                        onClick={() => { art1 = handleToggle('deadfuck', art1); }}
+                        onClick={() => { art6 = handleToggle('deadfuck', art6); }}
                     >
                         <div className='titleCard'>
                             <h3>www.deadfuck.fr</h3>
@@ -106,11 +150,11 @@ const Card = () => {
                         className={`Hovered Hovered-socialNetwork `}
                         onMouseEnter={() => handleHover('socialNetwork')}
                         onMouseLeave={() => handleHoverLeave('socialNetwork')}
-                        onClick={() => { art2 = handleToggle('socialNetwork', art2); }}
+                        onClick={() => { art5 = handleToggle('socialNetwork', art5); }}
                     >
 
                         <div className='titleCard'>
-                            <h3>Réseau Social</h3>
+                            <h3>MyTelling.fr</h3>
                             <img className='arrow' src={arrow} alt="" />
                         </div>
 
@@ -118,6 +162,7 @@ const Card = () => {
                             <p>PHP</p>
                             <p>PHTML</p>
                             <p>CSS</p>
+                            <p>JavaScript</p>
                             <p>Bootstrap</p>
                             <p>MySQL</p>
                             <p>PHPMyAdmin</p>
@@ -136,7 +181,7 @@ const Card = () => {
                                     <a href='https://github.com/DiegoMazenc/ReseauSocial' target='_blank'> <p>Voir Repositorie</p></a>
                                 </div>
                             </div>
-                            <p className='webLink'>Site non disponible</p>
+                            <a href='https://www.mytelling.fr/' className='webLink' target='_blank'>voir le site</a>
                         </div>
                     </div>
 
@@ -151,7 +196,7 @@ const Card = () => {
                         className={`Hovered Hovered-UBB`}
                         onMouseEnter={() => handleHover('UBB')}
                         onMouseLeave={() => handleHoverLeave('UBB')}
-                        onClick={() => { art3 = handleToggle('UBB', art3); }}
+                        onClick={() => { art4 = handleToggle('UBB', art4); }}
                     >
 
                         <div className='titleCard'>
@@ -197,7 +242,7 @@ const Card = () => {
                         className={`Hovered Hovered-DashBoard `}
                         onMouseEnter={() => handleHover('DashBoard')}
                         onMouseLeave={() => handleHoverLeave('DashBoard')}
-                        onClick={() => { art4 = handleToggle('DashBoard', art4); }}
+                        onClick={() => { art3 = handleToggle('DashBoard', art3); }}
                     >
 
                         <div className='titleCard'>
@@ -239,7 +284,7 @@ const Card = () => {
                         className={`Hovered Hovered-wolfGang `}
                         onMouseEnter={() => handleHover('wolfGang')}
                         onMouseLeave={() => handleHoverLeave('wolfGang')}
-                        onClick={() => { art5 = handleToggle('wolfGang', art5); }}
+                        onClick={() => { art2 = handleToggle('wolfGang', art2); }}
                     >
 
                         <div className='titleCard'>
@@ -279,7 +324,7 @@ const Card = () => {
                         className={`Hovered Hovered-siteVoyage `}
                         onMouseEnter={() => handleHover('siteVoyage')}
                         onMouseLeave={() => handleHoverLeave('siteVoyage')}
-                        onClick={() => { art6 = handleToggle('siteVoyage', art6); }}
+                        onClick={() => { art1 = handleToggle('siteVoyage', art1); }}
                     >
 
                         <div className='titleCard'>

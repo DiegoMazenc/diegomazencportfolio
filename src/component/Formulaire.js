@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import astroboySpaceship from '../img/astroboySpaceship.png';
 import flame from '../img/flame.png';
-import cv from '../img/CV_MazencDiégo.pdf';
+import cv from '../img/CV_MazencDiégo2024.pdf';
 import githubLogo from '../img/githubLogo.png';
 import linkedin from '../img/linkedin.png';
 
