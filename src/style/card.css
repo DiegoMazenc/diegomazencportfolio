@@ -179,6 +179,15 @@ padding-left: 15px;
   height: auto;
 }
 
+.logoFrameWork{
+  position: absolute;
+  transform: translate(0,-50%);
+  left: 10px;
+  top: 8%;
+  /* width: 25px;
+  height: auto; */
+}
+
 .repo.hovered p {
     transform: translateX(0);
   }

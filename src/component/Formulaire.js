@@ -61,8 +61,8 @@ export const ContactUs = () => {
       console.error('Veuillez entrer une adresse email valide.');
 
       setEmail('');
-      
-      return; 
+
+      return;
     }
 
     emailjs
@@ -113,25 +113,25 @@ export const ContactUs = () => {
       </div>
 
       <form className='formContact' ref={form} onSubmit={sendEmail}>
-      <input className='nameForm' type='text' name='user_name' placeholder='Votre Nom' required />
-      <input
-        className='mailForm'
-        type='email'
-        name='user_email'
-        placeholder={
-          isEmailValid
-            ? 'Votre Email'
-            : 'Veuillez entrer une adresse email valide'
-        }
-        onChange={handleEmailChange}
-        value={email} 
-        required
-      />
-      <textarea name='message' placeholder='Votre Message' required />
-      <input className='btnForm' type='submit' value='Send' />
-    </form>
-        <p className='credits'>Site web par Diégo Mazenc | React | crédits illustrations : catalyststuff, Freepik</p>
-      </div>
+        <input className='nameForm' type='text' name='user_name' placeholder='Votre Nom' required />
+        <input
+          className='mailForm'
+          type='email'
+          name='user_email'
+          placeholder={
+            isEmailValid
+              ? 'Votre Email'
+              : 'Veuillez entrer une adresse email valide'
+          }
+          onChange={handleEmailChange}
+          value={email}
+          required
+        />
+        <textarea name='message' placeholder='Votre Message' required />
+        <input className='btnForm' type='submit' value='Send' />
+      </form>
+      <p className='credits'>Site web par Diégo Mazenc | React | crédits illustrations : catalyststuff, Freepik</p>
+    </div>
   );
 };
 
